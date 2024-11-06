@@ -9,7 +9,11 @@ public abstract class Product {
 
     public Product(String name, double price) {
         this.name = name;
-        this.price = price;
+        if (price<0){
+            this.price = 0;
+            System.out.println("Price is negative");
+        }else
+            this.price = price;
     }
 
 
