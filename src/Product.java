@@ -9,9 +9,8 @@ public abstract class Product {
 
     public Product(String name, double price) {
         this.name = name;
-        if (price<0){
-            this.price = 0;
-            System.out.println("Price is negative");
+        if (price<=0){
+            System.out.println("Price must be greater than 0");
         }else
             this.price = price;
     }
@@ -34,9 +33,9 @@ public abstract class Product {
         this.name = name;
     }
     public void setPrice(double price) {
-       if (price < 0) {
-           this.price = 0;
-           System.out.println("Price is negative");
+       if (price <=0) {
+           System.out.println("Price must be greater than 0");
+
        }else
         this.price = price;
     }

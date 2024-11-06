@@ -4,6 +4,7 @@ public class Movie extends Product {
 
     @Override
     public double getDiscount() {
+
         return super.getPrice() * 0.6;
     }
 
@@ -15,6 +16,7 @@ public class Movie extends Product {
 
     public Movie() {
 
+        this.setPrice(0);
     }
 
 

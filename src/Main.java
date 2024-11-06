@@ -4,6 +4,8 @@ public class Main {
         Book book1 = new Book("The Grey Wolf: A Novel",15.99,"Louise Penny");
 
         Movie movie1 = new Movie("The Batman",54.65,"Matt Reeves");
+        Movie movie2 = new Movie("The Batman",0,"Matt Reeves");
+
 
         System.out.println("Book: "+book1.getName()+
                             "\nAuthor: "+book1.getAuthor()+
