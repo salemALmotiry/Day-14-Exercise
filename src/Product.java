@@ -30,6 +30,10 @@ public abstract class Product {
         this.name = name;
     }
     public void setPrice(double price) {
+       if (price < 0) {
+           this.price = 0;
+           System.out.println("Price is negative");
+       }else
         this.price = price;
     }
 
