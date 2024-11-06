@@ -10,7 +10,7 @@ public class Book extends Product {
     public Book (String name, double price, String director) {
         super(name, price);
         this.Author = director;
-    }
+    } 
 
     public Book() {
 
